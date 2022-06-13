@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import GuitaresCard from "@components/GuitaresCard";
-import SGallery from "./style";
+import SGuitareGallery from "./style";
 
 export default function Gallery() {
   const [guitares, setGuitares] = useState([]);
@@ -13,7 +13,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <SGallery>
+    <SGuitareGallery>
       {guitares.map((guitare) => {
         return (
           <GuitaresCard
@@ -25,6 +25,6 @@ export default function Gallery() {
           />
         );
       })}
-    </SGallery>
+    </SGuitareGallery>
   );
 }

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import PianosCard from "@components/PianosCard";
-import SGallery from "./style";
+import SPianoGallery from "./style";
 
-export default function Gallery() {
+export default function PianosGallery() {
   const [pianos, setPianos] = useState([]);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <SGallery>
+    <SPianoGallery>
       {pianos.map((piano) => {
         return (
           <PianosCard
@@ -25,6 +25,6 @@ export default function Gallery() {
           />
         );
       })}
-    </SGallery>
+    </SPianoGallery>
   );
 }

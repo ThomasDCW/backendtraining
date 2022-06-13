@@ -1,9 +1,9 @@
-import PianosCard from "@components/PianosCard";
+import PianosGallery from "@components/PianosGallery";
 
 export default function Pianos() {
   return (
     <div>
-      <PianosCard />
+      <PianosGallery />
     </div>
   );
 }
