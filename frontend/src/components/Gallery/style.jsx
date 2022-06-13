@@ -5,4 +5,5 @@ export default styled.section`
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background-color: #fffdfd;
 `;
