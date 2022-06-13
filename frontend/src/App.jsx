@@ -1,12 +1,18 @@
-import Home from "@pages/Home";
-
-import "./App.css";
+import Header from "@components/Header";
+import NavBar from "@components/NavBar";
+import Guitares from "@pages/Guitares";
+import Pianos from "@pages/Pianos";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou</p>
+      <Header />
+      <NavBar />
+      <Routes>
+        <Route path="/guitares" element={<Guitares />} />
+        <Route path="/pianos" element={<Pianos />} />
+      </Routes>
     </div>
   );
 }
