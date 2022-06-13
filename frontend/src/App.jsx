@@ -1,11 +1,11 @@
 import Header from "@components/Header";
-import Gallery from "@components/Gallery";
+import Guitares from "@pages/Guitares";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Gallery />
+      <Guitares />
     </div>
   );
 }

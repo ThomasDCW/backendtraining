@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "@components/Card";
+import GuitaresCard from "@components/GuitaresCard";
 import SGallery from "./style";
 
 export default function Gallery() {
@@ -16,7 +16,7 @@ export default function Gallery() {
     <SGallery>
       {guitares.map((guitare) => {
         return (
-          <Card
+          <GuitaresCard
             key={guitare.id}
             brand={guitare.brand}
             name={guitare.name}
