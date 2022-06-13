@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
 export default styled.section`
-  border: 2px dotted black;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 `;

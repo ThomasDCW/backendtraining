@@ -1,12 +1,24 @@
 import styled from "styled-components";
 
 export default styled.article`
-  margin-top: 4vh;
-  background-color: gold;
-  border: solid 2px black;
-  width: 200px;
-  height: 300px;
+  font-family: sans-serif;
+  border: 2px solid black;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2vh;
+  .brandContainer {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  img {
+    height: 250px;
+  }
+  p {
+    font-size: 30px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
 `;
