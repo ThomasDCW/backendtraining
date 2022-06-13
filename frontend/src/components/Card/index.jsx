@@ -1,3 +1,5 @@
+import SCard from "./style";
+
 export default function Card() {
-  return <>CARD</>;
+  return <SCard>CARD</SCard>;
 }
