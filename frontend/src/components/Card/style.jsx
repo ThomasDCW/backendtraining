@@ -5,12 +5,13 @@ export default styled.article`
   border: 2px solid black;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  margin: 4vh;
   .brandContainer {
-    display: flex;
+    margin: 1em;
     h1 {
-      font-size: 20px;
+      font-size: 24px;
+      font-weight: bold;
     }
     h2 {
       font-size: 18px;
@@ -22,5 +23,6 @@ export default styled.article`
   }
   p {
     font-size: 32px;
+    font-weight: bold;
   }
 `;
