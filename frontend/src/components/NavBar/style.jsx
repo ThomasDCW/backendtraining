@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export default styled.nav`
   padding: 1em;
+
   ul {
     display: flex;
     justify-content: space-evenly;
+    a {
+      text-decoration: none;
+    }
     li {
       border: 3px solid black;
       color: white;
