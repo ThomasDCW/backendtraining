@@ -1,5 +1,5 @@
 import SHeader from "./style";
 
 export default function Header() {
-  return <SHeader>HEADER</SHeader>;
+  return <SHeader>BACKEND TRAINING</SHeader>;
 }
