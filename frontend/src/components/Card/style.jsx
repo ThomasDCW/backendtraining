@@ -7,18 +7,20 @@ export default styled.article`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 2vh;
   .brandContainer {
-    padding: 1rem;
-    font-weight: bold;
-    font-size: 20px;
+    display: flex;
+    h1 {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 18px;
+    }
   }
+
   img {
-    height: 250px;
+    width: 300px;
   }
   p {
-    font-size: 30px;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    font-size: 32px;
   }
 `;

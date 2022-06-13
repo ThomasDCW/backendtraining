@@ -9,28 +9,28 @@ export default function Gallery() {
       brand: "Gibson",
       name: "50s LG-2 Vintage Sunburst",
       img: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/482809/14775001_800.jpg",
-      price: "2290€",
+      price: "2290",
     },
     {
       id: 2,
       brand: "Taylor",
       name: "GS Mini-e Koa Plus",
       img: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/prod/483250.jpg",
-      price: "1099€",
+      price: "1099",
     },
     {
       id: 3,
       brand: "Takamine",
       name: "P3NY",
       img: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/prod/295056.jpg",
-      price: "1129€",
+      price: "1129",
     },
     {
       id: 4,
       brand: "Furch",
       name: "LJ-10 w/LR Baggs EAS-VTC",
       img: "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/prod/486375.jpg",
-      price: "1398€",
+      price: "1398",
     },
   ]);
 

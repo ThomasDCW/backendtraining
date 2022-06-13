@@ -9,7 +9,7 @@ export default function Card({ brand, name, img, price }) {
         <h2>{name}</h2>
       </div>
       <img src={img} alt="guitarepic" />
-      <p>{price}</p>
+      <p>{price}€</p>
     </SCard>
   );
 }
