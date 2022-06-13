@@ -1,3 +1,9 @@
+import PianosCard from "@components/PianosCard";
+
 export default function Pianos() {
-  return <>PIANOOOOO</>;
+  return (
+    <div>
+      <PianosCard />
+    </div>
+  );
 }

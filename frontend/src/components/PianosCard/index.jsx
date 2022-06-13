@@ -1,19 +1,19 @@
 import propTypes from "prop-types";
-import SCard from "./style";
+import SPianosCard from "./style";
 
-export default function GuitaresCard({ brand, name, img, price }) {
+export default function PianosCard({ brand, name, img, price }) {
   return (
-    <SCard>
+    <SPianosCard>
       <div className="brandContainer">
         <h1>{brand}</h1>
         <h2>{name}</h2>
       </div>
-      <img src={img} alt="guitarepic" />
+      <img src={img} alt="pianopic" />
       <p>{price}€</p>
-    </SCard>
+    </SPianosCard>
   );
 }
-GuitaresCard.propTypes = {
+PianosCard.propTypes = {
   brand: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
   img: propTypes.string.isRequired,
