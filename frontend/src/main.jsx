@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import reset, { Reset } from "styled-reset";
+import { Reset } from "styled-reset";
 
 import App from "./App";
 
