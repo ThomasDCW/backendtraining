@@ -4,10 +4,13 @@ import AdminGuitares from "@pages/AdminGuitares";
 import Guitares from "@pages/Guitares";
 import Pianos from "@pages/Pianos";
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <Header />
       <NavBar />
       <Routes>

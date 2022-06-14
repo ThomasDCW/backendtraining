@@ -48,7 +48,7 @@ export default function AdminGuitares() {
       />
       <input
         className="textfield"
-        type="text"
+        type="url"
         placeholder="Image de la guitare"
         name="img"
         value={formData.img}
