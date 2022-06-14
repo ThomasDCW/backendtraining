@@ -10,8 +10,8 @@ export default styled.form`
   margin-top: 4vh;
   margin-left: 35vw;
   margin-right: 35vw;
-  input {
-    width: 350px;
+  .textfield {
+    width: 70%;
     height: 3em;
     margin: 2vh;
     border: 3px #575151 solid;
@@ -21,12 +21,12 @@ export default styled.form`
       color: #413737;
     }
   }
-  input:focus {
+  .textfield:focus {
     transition: 0.2s;
     font-size: 1rem;
     font-weight: 900;
   }
-  button {
+  .submit {
     margin: 4vh;
     height: 2em;
     width: 200px;
@@ -40,7 +40,7 @@ export default styled.form`
     border-radius: 8px;
     cursor: pointer;
   }
-  button:hover {
+  .submit:hover {
     background: linear-gradient(to right, #ff2a6a 0%, #ffda0a 100%);
     box-shadow: none;
   }

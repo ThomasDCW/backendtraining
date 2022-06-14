@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export default styled.nav`
   padding: 1em;
+  font-family: sans-serif;
+  margin-top: 2vh;
 
   ul {
     display: flex;
@@ -19,7 +21,7 @@ export default styled.nav`
       -webkit-text-stroke: 0.8px black;
       background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
       border-radius: 10px;
-      padding: 0.6em;
+      padding: 0.4em;
     }
     li:hover {
       background: linear-gradient(to right, #ff2a6a 0%, #ffda0a 100%);
