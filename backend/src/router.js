@@ -1,6 +1,10 @@
 const express = require("express");
 
-const { ItemController, GuitareController } = require("./controllers");
+const {
+  ItemController,
+  GuitareController,
+  PianoController,
+} = require("./controllers");
 
 const router = express.Router();
 
@@ -11,5 +15,7 @@ router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
 
 router.get("/guitares", GuitareController.browse);
+router.post("/guitares", GuitareController.add);
+router.get("/pianos", PianoController.browse);
 
 module.exports = router;

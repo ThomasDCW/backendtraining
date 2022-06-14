@@ -1,8 +1,8 @@
 const models = require("../models");
 
-class GuitareController {
+class PianoController {
   static browse = (req, res) => {
-    models.guitare
+    models.piano
       .findAll()
       .then(([rows]) => {
         res.send(rows);
@@ -14,7 +14,7 @@ class GuitareController {
   };
 
   static read = (req, res) => {
-    models.guitare
+    models.piano
       .find(req.params.id)
       .then(([rows]) => {
         if (rows[0] == null) {
@@ -30,14 +30,14 @@ class GuitareController {
   };
 
   static edit = (req, res) => {
-    const guitare = req.body;
+    const piano = req.body;
 
     // TODO validations (length, format...)
 
-    guitare.id = parseInt(req.params.id, 10);
+    piano.id = parseInt(req.params.id, 10);
 
-    models.guitare
-      .update(guitare)
+    models.piano
+      .update(piano)
       .then(([result]) => {
         if (result.affectedRows === 0) {
           res.sendStatus(404);
@@ -52,14 +52,14 @@ class GuitareController {
   };
 
   static add = (req, res) => {
-    const guitare = req.body;
+    const piano = req.body;
 
     // TODO validations (length, format...)
 
-    models.guitare
-      .insert(guitare)
+    models.piano
+      .insert(piano)
       .then(([result]) => {
-        res.status(201).send({ ...guitare, id: result.insertId });
+        res.status(201).send({ ...piano, id: result.insertId });
       })
       .catch((err) => {
         console.error(err);
@@ -68,7 +68,7 @@ class GuitareController {
   };
 
   static delete = (req, res) => {
-    models.guitare
+    models.piano
       .delete(req.params.id)
       .then(() => {
         res.sendStatus(204);
@@ -80,4 +80,4 @@ class GuitareController {
   };
 }
 
-module.exports = GuitareController;
+module.exports = PianoController;

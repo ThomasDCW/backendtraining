@@ -8,8 +8,14 @@ export default function NavBar() {
         <Link to="/guitares">
           <li>Guitares</li>
         </Link>
+        <Link to="/adminguitares">
+          <li>Admin Guitares</li>
+        </Link>
         <Link to="/pianos">
           <li>Pianos</li>
+        </Link>
+        <Link to="/adminpianos">
+          <li>Admin Pianos</li>
         </Link>
       </ul>
     </SNavBar>

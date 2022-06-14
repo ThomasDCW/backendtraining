@@ -11,4 +11,5 @@ export default styled.header`
   justify-content: center;
   font-size: 40px;
   font-weight: bold;
+  font-family: sans-serif;
 `;
