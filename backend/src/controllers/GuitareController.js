@@ -56,7 +56,7 @@ class GuitareController {
 
     // TODO validations (length, format...)
 
-    models.guitar
+    models.guitare
       .insert(guitare)
       .then(([result]) => {
         res.status(201).send({ ...guitare, id: result.insertId });
